@@ -1,7 +1,14 @@
-const mongoose = require("mongoose");
+// models/faqModel.js
+import mongoose from "mongoose";
+
 const Schema = mongoose.Schema;
 
 const faqSchema = new Schema({
+  productId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Product",
+    required: true,
+  },
   question: {
     type: String,
     required: true,
@@ -30,4 +37,4 @@ faqSchema.pre("save", function (next) {
 
 const FAQ = mongoose.model("FAQ", faqSchema);
 
-module.exports = FAQ;
+export default FAQ;

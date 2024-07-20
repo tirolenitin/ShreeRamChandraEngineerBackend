@@ -1,6 +1,5 @@
 import bcrypt from "bcrypt";
 
-import "../config/dbConnection.js";
 import Admin from "../models/adminModel.js";
 
 export const login = async (req, res, next) => {
