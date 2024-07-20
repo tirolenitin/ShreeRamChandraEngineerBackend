@@ -1,4 +1,4 @@
-import "../models/dbConnection.js";
+import "../config/dbConnection.js";
 
 import productModelSchema from "../models/productModel.js";
 

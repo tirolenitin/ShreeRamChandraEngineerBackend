@@ -1,6 +1,7 @@
-import "../models/dbConnection.js";
-import Admin from "../models/adminModel.js";
 import bcrypt from "bcrypt";
+
+import "../config/dbConnection.js";
+import Admin from "../models/adminModel.js";
 
 export const login = async (req, res, next) => {
   const { email, password } = req.body;
