@@ -1,1 +1,1 @@
-MongoDB Atlas URL
+MongoDB Atlas URL  mongodb+srv://nitinwd01:05E9poG485FrzD38@cluster0.qr3ezhy.mongodb.net/ShreeRamChandra?retryWrites=true&w=majority&appName=Cluster0
