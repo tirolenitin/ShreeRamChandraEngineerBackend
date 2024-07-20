@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/S_R_Enginners")
+  .connect("mongodb+srv://nitinwd01:05E9poG485FrzD38@cluster0.qr3ezhy.mongodb.net/ShreeRamChandra?retryWrites=true&w=majority&appName=Cluster0")
   .then((res) => {
     console.log("Database connected successfully");
   })
