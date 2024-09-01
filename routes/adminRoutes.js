@@ -38,4 +38,22 @@ router.get(
 router.put("/update-faq", indexController.faqController.updateFAQ);
 router.delete("/delete-faq", indexController.faqController.deleteFAQ);
 
+
+//caraosel 
+
+router.post("/add-caraousel",indexController.caraoselController.addCarousel);
+router.get("/get-caraousel",indexController.caraoselController.getCarousel);
+router.patch("/update-caraousel/:id",indexController.caraoselController.updateCarousel);
+router.delete("/delete-caraousel/:id",indexController.caraoselController.deleteCarousel);
+
+//contact 
+
+router.post("/save-contact", indexController.contactController.save)
+router.get("/fetch-contact",indexController.contactController.fetch);
+router.patch("/update-contact",indexController.contactController.update);
+
+//upload image
+
+router.post("/upload",indexController.uploadController.uploadSingleFile)
+
 export default router;
